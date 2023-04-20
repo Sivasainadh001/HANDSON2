@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<body>
+    <h1>FORMS</h1>
+    <form action="./result.html" method="get">
+        <lable for="name"  style="font-size: 20px;">Name:
+            <input type="text" placeholder="name" id="name" name="name" required><br><br>
+        </lable>
+
+        <lable for="email" style="font-size: 20px;">Gmail:
+               <input type="email" name="email" placeholder="email" required>
+        </lable><br><br>
+
+
+        <lable for="password"  style="font-size: 20px;">Password:
+                <input type="password" name="password" placeholder="password" title="must use different symboles" required><br><br>
+        </lable>
+
+        <label for="lang" style="font-size: 20px;">Languages<br><br>
+             <input type="radio"  name="lang" value="React"/>React<br>
+             <input type="radio"  name="lang" value="Angular"/>Angular<br>
+             <input type="radio"  name="lang" value="Vue"/>Vue<br><br>
+        </lable>
+
+        <lable for="course" multiple >Course<br><br>
+              <input type="checkbox"  name="course1" value="HTML"/>HTML:5<br>
+              <input type="checkbox"  name="course2" value="CSS"/>CSS<br>
+              <input type="checkbox"  name="course3" value="JAVASCRIPT"/>JAVASCRIPT<br>
+              <input type="checkbox"  name="course4" value="VUE"/>VUE<br>
+        </lable><br>
+
+        <lable for="field:" style="font-size: 20px;">FIELD:<br>
+            <select id="field:" name="field:">
+                <option name="course" value="frontend">Frontend</option>
+                <option  name="course" value="backend">Backend</option>
+                <option  name="course" value="database">Database</option> 
+            </select>
+        </lable><br><br>
+
+        <lable> Address </lable><br><br>
+               <textarea rows="4" cols="50" name="description" required></textarea><br><br>
+
+        <lable for="phoner"  style="font-size: 20px;">Phone number
+            <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{10}" title="please enter mobile number" required> 
+        </lable>
+        <button type="submit">submit</button>  <input type="reset" name="reset">        
+        <br><br>       
+ </form>
+ <h1>Table</h1>
+ <a href="table.html">Click this open the table information</a>
+ 
+
+    
+</body>
+</html>
